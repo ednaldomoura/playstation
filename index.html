@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playstation Store</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;1,200&family=Roboto:ital,wght@1,100&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div>
+            <img class="logo" src="./img/logo.png" alt="logo">
+            <div class="navbar">
+                <nav>
+                    <ul id="menu-list">
+                        <li class="nav-li"><a class="nav-link">consoles</a></li>
+                        <li class="nav-li"><a class="nav-link">acessórios</a></li>
+                        <li class="nav-li"><a class="nav-link">controles</a></li>
+                        <li class="nav-li"><a class="nav-link">outros</a></li>
+    
+                    </ul>
+    
+                </nav>
+                <img src="./img/menu.png" alt="botao menu" class="menu-icon" onclick="showMenu()">
+            </div>
+            
+            <div class="row">
+                <div class="column-1">
+                    <h2>ps5 Dualshok</h2> 
+                    <h3>wireless controller for PlayStation</h3>
+                    <p>Controle Origimal</p>
+                    <h4>R$ 222,50</h4>
+                    <button class="buy">Comprar agora <img src="./img/arrow.png" alt="seta"></button>
+                </div>
+                
+                <div class="column-2">
+                    <img class="controller" src="./img/controller.png" alt="Controle"> 
+                    <div class="color-box"></div>
+                    <button class="add-cart">
+                        <img src="./img/add.png" alt="adicionar ao carrinho">
+                    </button>
+                </div>
+               
+            </div>
+        </div>
+
+        <div class="social-links">
+            <img src="./img/fb.png">
+            <img src="./img/ig.png">
+            <img src="./img/tw.png">
+        </div>
+
+    </div>
+
+    
+
+</body>
+<script>
+    const menulist = document.getElementById("menu-list")
+    menulist.style.maxHeight = "0px"
+    
+     function showMenu(){
+          if(menulist.style.maxHeight == "0px"){
+            menulist.style.maxHeight = "120px"
+       } else {
+        menulist.style.maxHeight = "0px"
+     }
+            
+     } 
+</script>
+
+</html>
